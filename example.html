@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script async type="text/javascript" src="coordinates.js"></script>
+    <script async type="text/javascript" src="general.js"></script>
+    <script async type="text/javascript" src="hill_climber.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // defer loading of main.js script
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "main.js";
+        document.body.appendChild(element);
+      }
+      if (window.addEventListener)
+        window.addEventListener("load", downloadJSAtOnload, false);
+      else if (window.attachEvent)
+        window.attachEvent("onload", downloadJSAtOnload);
+      else window.onload = downloadJSAtOnload;
+    </script>
+  </body>
+</html>
