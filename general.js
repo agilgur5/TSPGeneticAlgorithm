@@ -55,16 +55,3 @@ function create_random_path(coord_array) {
   } // end while
   return path;
 }
-
-// swap mutation: swaps the position of two elements in the current path
-function swap(path) {
-  var new_path = path.slice(); // clone
-  // get two random indices to swap
-  var swappedIndex1 = Math.floor(Math.random() * new_path.length);
-  var swappedIndex2 = Math.floor(Math.random() * new_path.length);
-  // swap the indices
-  var temp = new_path[swappedIndex1];
-  new_path[swappedIndex1] = new_path[swappedIndex2];
-  new_path[swappedIndex2] = temp;
-  return new_path;
-}
