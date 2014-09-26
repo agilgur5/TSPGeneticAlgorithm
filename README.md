@@ -1,4 +1,4 @@
-TSP_Evolutionary_Algo
+TSPGeneticAlgorithm
 =====================
 
-Some evolutionary algorithms and visualizations for the Traveling Salesperson Problem
+Some basic genetic algorithms and visualizations written in JavaScript for the Traveling Salesperson Problem
